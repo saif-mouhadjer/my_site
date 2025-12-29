@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>صفحتي الشخصية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Badeen+Display&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Mada:wght@200..900&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- floating background orbs -->
+  <div class="orb one" id="orb1"></div>
+  <div class="orb two" id="orb2"></div>
+  <div class="orb three" id="orb3"></div>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="العودة للأعلى">
+        <span class="brand-badge">S</span>
+        <span>Personal page</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">من أنا</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#contact">تواصل</a>
+      </div>
+
+      <div class="nav-actions">
+        <a class="btn primary" href="#contact">ابدأ الآن</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="container hero-grid">
+      <div class="card intro reveal">
+        <div class="glow"></div>
+
+        <span class="kicker"><span class="dot"></span> دورة سريعة: من الصفر إلى موقع منشور</span>
+
+        <h1>
+          أنا <span class="gradient-text">مهاجر سيف الدين</span>
+          <br />
+          <span class="typing" id="typing"></span>
+        </h1>
+
+        <p class="lead">
+          هذه صفحة شخصية نموذجية مصممة للمشروع النهائي لدورة المستوى القاعدي .
+          فيها حركات، تنقلات،  وتفاعلات… وكلها بأكواد بسيطة قابلة للتعلم خلال أسبوع.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">شاهد الأعمال</a>
+          <button class="btn" id="copyBtn" type="button">نسخ رابط التواصل</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="gradient-text">من أنا</h2>
+        </div>
+
+        <div class="grid-3">
+          <article class="feature reveal">
+            <h3>شهاداتي</h3>
+            <p>خريج جامعة الوادي من كلية العلوم الدقيقة بشهادة ماستر "انترنات الاشياء و امن الشبكات" . حاصل على شهادة "خمس نجوم" للطلبة المتفوقين</p>
+          </article>
+
+          <article class="feature reveal">
+            <h3>أهتماماتي</h3>
+            <p>تطوير مواقع الويب . أمن المعلومات . الذكاء الاصطناعي . الالكترونيات</p>
+          </article>
+
+          <article class="feature reveal">
+            <h3>ماذا أقدم؟</h3>
+            <p>أقدم دورات عملية و حصص خاصة لانشاء مواقع الويب و دروس جامعية مبنية على أسس صحيحة . و أطور مواقع الويب</p>
+            
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="gradient-text">المهارات</h2>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature reveal">
+            <h3>🧱 HTML</h3>
+            <p>هيكلة الصفحة: عناوين، أقسام، نماذج، روابط… بشكل صحيح وقابل للتطوير.</p>
+          </div>
+          <div class="feature reveal">
+            <h3>🎨 CSS</h3>
+            <p>تصميم عصري: تخطيطات، ألوان، مؤثرات، حركات، وتجربة مستخدم ممتعة.</p>
+          </div>
+          <div class="feature reveal">
+            <h3>🧠 JavaScript</h3>
+            <p>تفاعل: أزرار، قوائم، ظهور عند السكرول، مودال، وتحسين تجربة التصفح.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="gradient-text">المشاريع</h2>
+          <p>اضغط على أي مشروع لتشاهد التأثير.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" data-title="Landing Page" data-desc="موقع يمكنك من العثور على رفقائك ومشاركتهم الرحلات و التوجهات">
+            <div class="thumb" aria-hidden="true"></div>
+            <h3>reefca</h3>
+            <p>موقع سياحة و سفر</p>
+          </article>
+
+          <article class="project reveal" data-title="Portfolio" data-desc="صفحة أعمال شخصية تُبرز مهاراتك ومشاريعك وتساعدك في فرص العمل والتعاون.">
+            <div class="thumb" aria-hidden="true"></div>
+            <h3>Portfolio</h3>
+            <p>عرض احترافي للأعمال.</p>
+          </article>
+
+          <article class="project reveal" data-title="Mini App" data-desc="منصة للوكالات لعرض عروضها حول العمرة و الحج بشكل الكتروني و تتبع المعتمر لتلبية جميع احتياجاته ">
+            <div class="thumb" aria-hidden="true"></div>
+            <h3>توكل</h3>
+            <p>موقع تسجيل للعمرة و الحج</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="gradient-text">تواصل</h2>
+          <p>اكتب رسالة (تجربة فقط) وسترى Toast جميل.</p>
+        </div>
+
+        <div class="contact">
+          <div class="box reveal">
+            <h3 style="margin-top:0">جاهز تبدأ رحلتك؟</h3>
+            <p style="color:var(--muted); margin-top:6px">
+              إذا كنت طالبًا  او شغوف بالبرمجة وتسعى لفهم البرمجة بشكل صحيح، أو تبحث عن توجيه في مسارك التقني، فأهلاً بك.
+              أؤمن أن السؤال الجيد هو بداية التعلّم الحقيقي، ويسعدني دائمًا دعمك ومرافقتك خطوة بخطوة.
+
+              إن كان لديك مشروع، استفسار، أو رغبة في العمل معًا، لا تتردد في التواصل.
+              اترك رسالتك وسأحرص على الرد في أقرب وقت ممكن.
+            </p>
+          </div>
+
+          <form class="box reveal" id="contactForm">
+            <div class="field">
+              <label for="name">الاسم</label>
+              <input id="name" name="name" placeholder="اكتب اسمك…" required />
+            </div>
+            <div class="field">
+              <label for="email">البريد</label>
+              <input id="email" name="email" type="email" placeholder="example@email.com" required />
+            </div>
+            <div class="field">
+              <label for="msg">الرسالة</label>
+              <textarea id="msg" name="msg" placeholder="اكتب رسالتك…" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">إرسال</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> — HTML/CSS/JS </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">تم ✅</div>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="تفاصيل المشروع">
+    <div class="modal-card">
+      <div class="modal-head">
+        <b id="modalTitle">عنوان</b>
+        <button class="btn" id="closeModal" type="button">إغلاق ✖</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-preview" aria-hidden="true"></div>
+        <p id="modalDesc" style="margin:0"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
